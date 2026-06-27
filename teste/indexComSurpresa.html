@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetFighter</title>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0 auto;
+    }
+    body {
+        background: url(imagens/cenario2.gif);
+    }
+    #p1{
+        position: absolute;
+        top: 245px;
+        left: 100px;
+        z-index: 1;
+    }
+    #p2{
+        position: absolute;
+        top: 250px;
+        left: 820px;
+        z-index: 1;
+    }
+    button{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }   
+    #b1{
+        position: absolute;
+        background-color: rgba(50, 51, 51, 0.9);
+        width: 405px;
+        height: 140px;
+        border-radius: 20px;
+        left: 165px;
+        top: 60px;
+    }   
+    #b2{
+        position: absolute;
+        background-color: rgba(50, 51, 51, 0.9);
+        width: 405px;
+        height: 140px;
+        border-radius: 20px;
+        left: 950px;
+        top: 60px;
+    }
+    button:hover{
+        background-color: rgba(94, 94, 94, 0.8);
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div class="butoes" id="b1">
+            <button onclick="document.querySelector('#p1 img').src='gifs/soco.gif'">
+                <img src="imagens/X.png" alt="" width="70px">
+            </button>
+            <button onclick="document.querySelector('#p1 img').src='gifs/invisivel.gif'">
+                <img src="imagens/O.png" alt="" width="70px">
+            </button>
+            <button onclick="document.querySelector('#p1 img').src='gifs/soco.gif'">
+                <img src="imagens/B.png" alt="" width="70px">
+            </button>
+            <audio id="somY">
+                <source src="imagens/supresa.mp3" type="audio/mp3">
+            </audio>
+            <button onclick="document.querySelector('#p1 img').src='gifs/neutro.gif'; document.getElementById('somY').play();">
+                <img src="imagens/Y.png" alt="" width="70px">
+            </button>
+        </div>
+        <div class="personagens" id="p1">
+            <img src="gifs/neutro.gif" alt="" width="600px">
+        </div>
+        <div class="personagens" id="p2">
+            <img src="gifs/neutro (3).gif" alt="" width="600px">
+        </div>
+        <div class="butoes" id="b2">
+            <button onclick="document.querySelector('#p2 img').src='gifs/joia2.gif'">
+                <img src="imagens/X.png" alt="" width="70px">
+            </button>
+            <button onclick="document.querySelector('#p2 img').src='gifs/abaixa2.gif'">
+                <img src="imagens/O.png" alt="" width="70px">
+            </button>
+            <button onclick="document.querySelector('#p2 img').src='gifs/chute2.gif'">
+                <img src="imagens/B.png" alt="" width="70px">
+            </button>
+            <button onclick="document.querySelector('#p2 img').src='gifs/neutro (3).gif'">
+                <img src="imagens/Y.png" alt="" width="70px">
+        </div>
+    </div>
+</body>
+</html>
